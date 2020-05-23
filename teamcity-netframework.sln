@@ -5,6 +5,30 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teamcity-netframework", "teamcity-netframework\teamcity-netframework.csproj", "{9BD4EC81-DB9D-4F3D-9FBD-CE9CDEFAD67B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{4669367D-378F-4FF3-BCA2-85DA548F39B8}"
+	ProjectSection(SolutionItems) = preProject
+		database\SqlFileConcatenation.ps1 = database\SqlFileConcatenation.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit-tests", "unit-tests", "{BA28B7B6-3226-42E7-BD3E-21C3B03AE8FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unit-tests", "unit-tests\unit-tests.csproj", "{CBD3681D-8E44-47AC-833F-57477F2E137E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{F69A723A-D898-4261-9EDD-C23A4F55706F}"
+	ProjectSection(SolutionItems) = preProject
+		database\Data\dummy_data.sql = database\Data\dummy_data.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "patches", "patches", "{B523C570-EE8D-4B64-AFC5-2E088265981C}"
+	ProjectSection(SolutionItems) = preProject
+		database\Patches\202005231651.sql = database\Patches\202005231651.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{239AA7D8-5F4D-4EA9-978E-C2EE6B5F2578}"
+	ProjectSection(SolutionItems) = preProject
+		database\Setup\Create.sql = database\Setup\Create.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +39,19 @@ Global
 		{9BD4EC81-DB9D-4F3D-9FBD-CE9CDEFAD67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BD4EC81-DB9D-4F3D-9FBD-CE9CDEFAD67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BD4EC81-DB9D-4F3D-9FBD-CE9CDEFAD67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD3681D-8E44-47AC-833F-57477F2E137E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD3681D-8E44-47AC-833F-57477F2E137E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD3681D-8E44-47AC-833F-57477F2E137E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD3681D-8E44-47AC-833F-57477F2E137E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBD3681D-8E44-47AC-833F-57477F2E137E} = {BA28B7B6-3226-42E7-BD3E-21C3B03AE8FB}
+		{F69A723A-D898-4261-9EDD-C23A4F55706F} = {4669367D-378F-4FF3-BCA2-85DA548F39B8}
+		{B523C570-EE8D-4B64-AFC5-2E088265981C} = {4669367D-378F-4FF3-BCA2-85DA548F39B8}
+		{239AA7D8-5F4D-4EA9-978E-C2EE6B5F2578} = {4669367D-378F-4FF3-BCA2-85DA548F39B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDCE31F2-6E7E-4EF2-8DA0-DDF752A993BC}
