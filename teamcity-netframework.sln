@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{239AA7D8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{8948BEC0-2A9E-4E53-8160-C52C64D31BBD}"
 	ProjectSection(SolutionItems) = preProject
-		Transform.msbuild = Transform.msbuild
+		deploy\Transform.msbuild = deploy\Transform.msbuild
 	EndProjectSection
 EndProject
 Global
